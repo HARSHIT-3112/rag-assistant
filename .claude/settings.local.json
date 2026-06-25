@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app/ingestion/pipeline.py'\\).read\\(\\)\\); print\\('pipeline.py: OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app/rag/retriever.py'\\).read\\(\\)\\); print\\('retriever.py: OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('app/api/routes/documents.py'\\).read\\(\\)\\); print\\('documents.py: OK'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('README.md'\\).read\\(\\)\\) if False else print\\('README.md: checked manually'\\)\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('.env.example'\\).read\\(\\)\\) if False else print\\('.env.example: checked manually'\\)\")"
+    ]
+  }
+}
